@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#9d50bb, #6e48aa);
+    position: relative;
+    overflow-x: hidden;
+
+  }
+
+  .container {
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2); /* Transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Border with light opacity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+  }
+
+  .container > h1 {
+    width: fit-content;
+    border-bottom: 5px solid #fff;
+    padding-bottom: 0.5rem;
+    margin: auto;
+    color: #fff;
+  }
+
+  .search-container {
+    width: 400px;
+    border: 1px solid #fff;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+    border-radius: 5px;
+    padding-right: 0.3rem;
+  }
+
+  .search-container input {
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    outline: none;
+    width: 75%;
+    /* background-color: red; */
+    color: #fff;
+    font-size: 1.2rem;
+  }
+
+  .search-container button {
+    padding: 0.35rem 1rem;
+    background-color: rgb(16, 163, 5);
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+
+  .todo-container {
+    width: 450px;
+    height: 400px;
+    margin: auto;
+    overflow-y: auto;
+    /* overflow-x: hidden; */
+    /* background-color: white; */
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(#9d50bb, #6e48aa);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: rgb(180, 180, 180);
+  }
+
+  .todo-container .newTodo {
+    width: 400px;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+  }
+
+  .todo-container .newTodo p {
+    color: #fff;
+    padding-right: 1rem;
+    text-align: justify;
+  }
+
+  .icons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .fa-pen-to-square {
+    color: rgb(16, 163, 5);
+    cursor: pointer;
+  }
+
+  .fa-trash-can {
+    color: red;
+    cursor: pointer;
+  }
+
+
+  .alertContainer{
+    width: 200px;
+    height: 20px;
+    background-color: #e29d9d;
+    border-radius: 5px;
+    border-left: 4px solid red;
+    color: white;
+    position: absolute;
+    /* top: 23px;
+    right:270px; */
+
+    top: 23px;
+    right: -270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 1rem;
+    transition: all .3s ease;
+  }
+
+  .fa-xmark{
+    cursor: pointer;
+  }
